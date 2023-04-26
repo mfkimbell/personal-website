@@ -1,4 +1,4 @@
-# HTML_PersonalWebsite
+# personal-website
 
 Purpose of this project was to create a professional platform to advertise my resume and skills. 
 
