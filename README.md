@@ -1,5 +1,6 @@
 # HTML_PersonalWebsite
-A personal website with a resumé built in.
+
+Purpose of this project was to create a professional platform to advertise my resume and skills. 
 
 Main page:
 
