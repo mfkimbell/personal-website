@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "name": "personal-website",
+  "description": "Purpose of this project was to create a professional platform to advertise my resume and skills.",
+  "version": "1.0.0",
+  "main": "contact.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfkimbell/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfkimbell/personal-website/issues"
+  },
+  "homepage": "https://github.com/mfkimbell/personal-website#readme"
+}

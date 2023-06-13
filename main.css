@@ -2515,6 +2515,15 @@ figure.highlight pre.highlight {
 .highlight .ni {
   color: #586e75;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  
+  border-radius: 20px;
+}
 .highlight .ne {
   color: #dc322f;
 }
