@@ -9,11 +9,19 @@
 	flex-direction: column;
 	
   }
+  a:hover {
+	filter: brightness(0.8);
+	
+  }
+  .container2:hover {
+	
+	color: black;
+  }
 
   a {
 	text-decoration: none;
   }
-  
+
   .container3 {
 	display: flex;
 	margin-right: 1em;
