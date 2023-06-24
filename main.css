@@ -1889,12 +1889,13 @@ th {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
 }
 .greedy-nav .visible-links li {
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
+  min-width: 3em;
 }
 .greedy-nav .visible-links a {
   position: relative;
