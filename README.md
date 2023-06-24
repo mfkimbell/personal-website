@@ -8,6 +8,6 @@ Purpose of this project was to create a professional platform to advertise my re
 
 Main page on IOS:
 
-![mobile-app-website-header](https://github.com/mfkimbell/personal-website/assets/107063397/79609c16-adea-4b32-8925-d0a15fc6d330)
+<img width="409" alt="phone2 copy" src="https://github.com/mfkimbell/personal-website/assets/107063397/0a372e3d-6e53-4f17-acac-6330251f44e7">
 
 Contact Form uses Web3Forms.com
