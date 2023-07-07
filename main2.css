@@ -1408,6 +1408,8 @@ th {
   margin-bottom: 0;
   font-size: 1em;
 }
+
+
 .notice p:last-child {
   margin-bottom: 0 !important;
 }
@@ -3131,8 +3133,9 @@ body {
 }
 @media (min-width: 80em) {
   .page {
-    width: calc(100% - 300px);
+    
     padding-right: 100px;
+    
   }
 }
 .page .page__inner-wrap {
@@ -3140,7 +3143,7 @@ body {
   margin-top: 1em;
   margin-left: 0;
   margin-right: 0;
-  width: 125%;
+  width: 100%;
   clear: both;
 }
 .page .page__inner-wrap .page__content,
@@ -3988,6 +3991,7 @@ body {
 @media (min-width: 80em) {
   .sidebar {
     width: calc(300px - 1em);
+    margin-left: -5em;
   }
 }
 .sidebar > * {
@@ -4425,12 +4429,12 @@ body {
     content: " (" attr(title) ")";
   }
   #main {
-    max-width: 100%;
+    max-width: 120%;
   }
   .page {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 120%;
   }
   .page-break,
   .page-break-before {

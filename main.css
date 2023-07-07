@@ -3,8 +3,29 @@
  * Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
  */
+
  .github img {
   width: 100%;
+}
+.jobicon {
+  max-height:3em;
+  max-width: 3em;
+  margin-right: 1em;
+}
+.special {
+  margin-left: auto; /* Updated margin property */
+  margin-right: 0; /* Removed margin-right property */
+}
+
+.picture-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.title-row {
+  display: flex;
+  flex-direction: row;
 }
 .mfp-counter {
   font-family: Baskerville, Georgia, Times, serif;
@@ -40,6 +61,12 @@
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
     "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-weight: 300;
+}
+.content2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-weight: 300;
+  text-align:end;
 }
 .mfp-bg {
   top: 0;
@@ -3094,8 +3121,9 @@ body {
 }
 @media (min-width: 80em) {
   .page {
-    width: calc(100% - 300px);
+    
     padding-right: 100px;
+    
   }
 }
 .page .page__inner-wrap {
@@ -3924,7 +3952,7 @@ body {
 .layout--single .feature__wrapper {
   display: inline-block;
 }
-.sidebar {
+.yyhgar {
   clear: both;
 }
 .sidebar::after {
@@ -3951,6 +3979,7 @@ body {
 @media (min-width: 80em) {
   .sidebar {
     width: calc(300px - 1em);
+    margin-left: -5em;
   }
 }
 .sidebar > * {
@@ -3999,6 +4028,7 @@ body {
     position: sticky;
     top: 2em;
     float: right;
+    
   }
   .sidebar__right.sticky::after {
     clear: both;
@@ -4390,12 +4420,12 @@ body {
     content: " (" attr(title) ")";
   }
   #main {
-    max-width: 100%;
+    max-width: 120%;
   }
   .page {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 120%;
   }
   .page-break,
   .page-break-before {
