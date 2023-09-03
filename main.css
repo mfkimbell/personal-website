@@ -1694,6 +1694,7 @@ th {
 }
 .masthead__menu .site-nav {
   margin-left: 0;
+  min-width: 40em;
 }
 @media (min-width: 37.5em) {
   .masthead__menu .site-nav {
@@ -2218,7 +2219,7 @@ th {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  min-width:
+  min-width: 35em;
   margin-top: 3em;
   color: #8e8b82;
   -webkit-animation: intro 0.3s both;
