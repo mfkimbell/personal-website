@@ -4093,9 +4093,9 @@ body {
     max-height: calc(100vh - 2em - 2em);
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 95em) {
   .sidebar {
-    width: calc(300px - 1em);
+    width: calc(300px - 6em);
     margin-left: -5em;
   }
 }
