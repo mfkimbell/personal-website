@@ -4089,7 +4089,7 @@ body {
     opacity: 1;
   }
   .sidebar.sticky {
-    
+    overflow:visible;
     max-height: calc(100vh - 2em - 2em);
   }
 }
