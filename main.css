@@ -20,16 +20,18 @@ body {
 	min-width: 32em;
 	flex-direction: column;
   
+  
 	
+  }
+  .item2:hover {
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.05);
   }
   a:hover {
-	filter: brightness(0.8);
+	
+ 
 	
   }
-  .container2:hover {
-	
-	color: black;
-  }
+
 
   a {
 	text-decoration: none;
@@ -39,7 +41,7 @@ body {
 	display: flex;
 	margin-right: 1em;
 	flex-direction: column;
-  font-size: min(3vw, 25px);
+  font-size: min(3vw, 20px);
 
   color: #CCCCCC;
   
@@ -47,7 +49,7 @@ body {
 	
   }
   .item2 {
-    background-color: #2E292B;
+    
     display: flex;
     border-radius:0.5em;
     overflow: hidden;
