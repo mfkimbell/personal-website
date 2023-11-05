@@ -1994,7 +1994,7 @@ th {
 }
 @media (min-width: 80em) {
   .masthead__inner-wrap {
-    max-width: 1280px;
+    max-width: 1550px;
   }
 }
 .masthead__inner-wrap nav {
@@ -4426,7 +4426,7 @@ body {
     margin-right: 0;
   }
 }
-.author__avatar {
+. _avatar {
   display: table-cell;
   vertical-align: top;
   width: 36px;
@@ -4455,6 +4455,11 @@ body {
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+}
+.author_title {
+  font-size: medium;
+  margin-top: 0;
+  padding-top: 0.3em;
 }
 @media (min-width: 64em) {
   .author__content {
