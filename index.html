@@ -150,9 +150,7 @@
               <h3 class="author__name" itemprop="name">Mitchell Kimbell</h3>
               <h2 class="author_title">Software Engineer</h2>
 
-              <div class="author__bio" itemprop="description">
-                
-              </div>
+              <div class="author__bio" itemprop="description"></div>
             </div>
 
             <div class="author__urls-wrapper">
@@ -248,32 +246,30 @@
               </div>
             </a>
 
-            <a
-              href="https://github.com/mfkimbell/ecommerce-thrift-website/tree/main"
-            >
+            <a href="https://github.com/mfkimbell/catalog-web-scraper">
               <div class="container2">
-                <div class="item2 animated fadeInRight3">
-                  <img class="projectIcon" src="./photos/mongo.png" />
+                <div class="item2 animated fadeInRight2">
+                  <img class="projectIcon" src="./photos/devops.png" />
                   <div class="container3 content1">
-                    <b class="content3"> Thrift Store E-Commerce Website</b>
+                    <b class="content3"> End-to-End Devops Pipeline</b>
                     <p>
-                      A <b>Javascript</b> and <b>ReactJS</b> application that
-                      uses <b>MongoDB</b> to store data and <b>Mongoose</b> to
-                      create models to alter data, and <b>Express</b> to create
-                      endpoints to access data. It uses <b>JsonWebToken</b> to
-                      ensure user authentication when attempting to use various
-                      data routes and it encrypts and decrypts data with
-                      <b>CryptoJS</b>. This application allows users to create
-                      accounts, access products, add them to their carts, and
-                      more.
+                      A simple web application that updates a live production
+                      through <b>AWS</b> automatically. <b>Jenkins</b> polls for
+                      changes to GitHub source code for a <b>Tomcat</b> server
+                      hosted web application and then executes jobs with
+                      <b>Ansible</b> scripts. These scripts create new
+                      <b>Docker</b> images with the changes, upload those images
+                      to <b>DockerHub</b>, and then deploy the new image into
+                      multiple pods on <b>Kubernetes</b> with a loadbalancer.
                       <span class="iconDivide">
-                        <span class="tool">Javascript</span>
-                        <span class="tool">ReactJS</span>
-                        <span class="tool"> MongoDB </span>
-                        <span class="tool"> Mongoose </span>
-                        <span class="tool"> Express </span>
-                        <span class="tool"> JsonWebToken </span>
-                        <span class="tool"> CryptoJS </span>
+                        <span class="tool">AWS-EC2</span>
+                        <span class="tool">AWS-EKS</span>
+                        <span class="tool">Jenkins</span>
+                        <span class="tool"> Tomcat </span>
+                        <span class="tool"> Maven </span>
+                        <span class="tool"> Ansible </span>
+                        <span class="tool"> Docker </span>
+                        <span class="tool"> Kubernetes </span>
                       </span>
                     </p>
                   </div>
@@ -308,29 +304,31 @@
             </a>
 
             <a
-              href="https://github.com/mfkimbell/reviews-nlp-sentiment-analysis"
+              href="https://github.com/mfkimbell/ecommerce-thrift-website/tree/main"
             >
               <div class="container2">
-                <div class="item2 animated fadeInRight5">
-                  <img class="projectIcon" src="./photos/sentiment.png" />
+                <div class="item2 animated fadeInRight3">
+                  <img class="projectIcon" src="./photos/mongo.png" />
                   <div class="container3 content1">
-                    <b class="content3">
-                      NLP Sentiment Analysis for SQL Database</b
-                    >
+                    <b class="content3"> Thrift Store E-Commerce Website</b>
                     <p>
-                      A <b>Python</b> project that investiagates
-                      <b>HuggingFace's Transformers </b> and <b> NLTK</b>, but
-                      ultimately Implements <b>SpaCY </b> to add a sentiment
-                      section to an <b>PostgreSQL</b> database of posts, and
-                      populate those with sentiment polaritys based off the
-                      content of the post. The SQL query uses a batch format to
-                      make the program run faster.
+                      A <b>Javascript</b> and <b>ReactJS</b> application that
+                      uses <b>MongoDB</b> to store data and <b>Mongoose</b> to
+                      create models to alter data, and <b>Express</b> to create
+                      endpoints to access data. It uses <b>JsonWebToken</b> to
+                      ensure user authentication when attempting to use various
+                      data routes and it encrypts and decrypts data with
+                      <b>CryptoJS</b>. This application allows users to create
+                      accounts, access products, add them to their carts, and
+                      more.
                       <span class="iconDivide">
-                        <span class="tool">Python</span>
-                        <span class="tool">HuggingFace</span>
-                        <span class="tool"> NLTK </span>
-                        <span class="tool"> SpaCY </span>
-                        <span class="tool"> PostgreSQL </span>
+                        <span class="tool">Javascript</span>
+                        <span class="tool">ReactJS</span>
+                        <span class="tool"> MongoDB </span>
+                        <span class="tool"> Mongoose </span>
+                        <span class="tool"> Express </span>
+                        <span class="tool"> JsonWebToken </span>
+                        <span class="tool"> CryptoJS </span>
                       </span>
                     </p>
                   </div>
@@ -363,7 +361,9 @@
               </div>
             </a>
 
-            <a href="https://github.com/mfkimbell/github-actions-custom-actions">
+            <a
+              href="https://github.com/mfkimbell/github-actions-custom-actions"
+            >
               <div class="container2">
                 <div class="item2 animated fadeInRight7">
                   <img class="projectIcon" src="./photos/aws2.png" />
@@ -407,6 +407,37 @@
                         <span class="tool">Github CI/CD</span>
                         <span class="tool">React</span>
                         <span class="tool">Javascript</span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/mfkimbell/reviews-nlp-sentiment-analysis"
+            >
+              <div class="container2">
+                <div class="item2 animated fadeInRight5">
+                  <img class="projectIcon" src="./photos/sentiment.png" />
+                  <div class="container3 content1">
+                    <b class="content3">
+                      NLP Sentiment Analysis for SQL Database</b
+                    >
+                    <p>
+                      A <b>Python</b> project that investiagates
+                      <b>HuggingFace's Transformers </b> and <b> NLTK</b>, but
+                      ultimately Implements <b>SpaCY </b> to add a sentiment
+                      section to an <b>PostgreSQL</b> database of posts, and
+                      populate those with sentiment polaritys based off the
+                      content of the post. The SQL query uses a batch format to
+                      make the program run faster.
+                      <span class="iconDivide">
+                        <span class="tool">Python</span>
+                        <span class="tool">HuggingFace</span>
+                        <span class="tool"> NLTK </span>
+                        <span class="tool"> SpaCY </span>
+                        <span class="tool"> PostgreSQL </span>
                       </span>
                     </p>
                   </div>
@@ -559,7 +590,7 @@
                 <div class="item2 animated fadeInRight13">
                   <img class="projectIcon" src="./photos/docker.png" />
                   <div class="container3 content1">
-                    <b class="content3"> Todo-List</b>
+                    <b class="content3"> React Todo-List</b>
                     <p>
                       <b>React</b> to-do list containerized with <b>Docker</b>.
                       Purpose of this project was to learn more about
