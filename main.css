@@ -4475,17 +4475,20 @@ body {
 }
 .author__name {
   margin: 0;
+  min-width: 180px;
 }
 @media (min-width: 64em) {
   .author__name {
     margin-top: 10px;
     margin-bottom: 10px;
+    min-width: 180px;
   }
 }
 .sidebar .author__name {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
     "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 1em;
+  min-width: 180px;
 }
 .author__bio {
   margin: 0;
