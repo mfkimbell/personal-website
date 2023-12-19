@@ -81,8 +81,8 @@
   </head>
 
   <body class="layout--single">
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
+    <div class="masthead" style="overflow: visible">
+      <div class="masthead__inner-wrap" style="overflow: visible">
         <div class="masthead__menu">
           <nav
             style="overflow: visible"
@@ -106,76 +106,81 @@
             <ul
               class="visible-links"
               style="
-                margin-bottom: 20px;
-                padding-right: 50px;
-                margin-right: 50px;
+                margin-bottom: 1.1em;
+
+                margin-right: 5em;
                 overflow: visible;
-                display: flex;
+                min-width: 20em;
               "
             >
               <li
                 class="masthead__menu-item"
                 id="hobbies-link"
-                style="margin-right: 60px; margin-bottom: 10px"
+                style="margin-right: 60px; margin-bottom: 1em; min-width: 3em"
               >
                 <a class="animated fadeInDown3 hobbies" href="design.html">
                   <div style="display: flex; align-items: center">
                     <div
-                      style="
-                        min-width: 30px;
-                        min-height: 30px;
-                        margin-left: -4px;
-                      "
+                      style="min-width: 2em; min-height: 2em; margin-left: -4px"
                     >
                       <img
                         id="hobbies-image"
                         src="./photos/still.png"
                         style="
-                          min-width: 19px;
-                          min-height: 19px;
-                          margin-left: 5.5px;
-                          margin-bottom: 4px;
+                          min-width: 1em;
+                          min-height: 1em;
+                          margin-left: 0em;
+                          margin-right: -4em;
+                          margin-bottom: -0.3em;
                         "
                       />
                       <img
                         id="hobbies-spin-image"
                         src="./photos/spin.gif"
                         style="
-                          min-width: 30px;
-                          min-height: 30px;
+                          min-width: 1.6em;
+                          min-height: 1.6em;
+                          margin-bottom: -0.5em;
                           display: none;
-                          padding-left: -15px;
-                          margin-bottom: -1px;
+                          padding-left: -7em;
+                          margin-left: -0.3em;
                         "
                       />
                     </div>
-                    <span style="margin-bottom: 0px">Hobbies</span>
+                    <span style="margin-left: -0.8em">Hobbies</span>
                   </div>
                 </a>
               </li>
 
               <li
                 class="masthead__menu-item"
-                id="project-link"
-                style="margin-right: 60px"
+                id="hobbies-link"
+                style="
+                  margin-right: 60px;
+                  margin-left: 0.8em;
+                  margin-bottom: 1em;
+                  min-width: 3em;
+                "
               >
-                <a class="animated fadeInDown3 project" href="index.html">
+                <a class="animated fadeInDown3" href="design.html">
                   <div style="display: flex; align-items: center">
-                    <div style="min-width: 30px; min-height: 30px">
+                    <div
+                      style="min-width: 2em; min-height: 2em; margin-left: -4px"
+                    >
                       <img
-                        id="project-spin-image"
-                        src="./photos/spin2.gif"
+                        id="hobbies-spin-image2"
+                        src="./photos/spin.gif"
                         style="
-                          min-width: 31px;
-                          min-height: 31px;
-                          margin-bottom: 5px;
-                          margin-left: -4px;
+                          min-width: 1.6em;
+                          min-height: 1.6em;
+                          margin-bottom: -0.35em;
+
+                          padding-left: -7em;
+                          margin-left: -0.3em;
                         "
                       />
                     </div>
-                    <span style="margin-left: -3px; margin-bottom: 4px"
-                      >Projects</span
-                    >
+                    <span style="margin-left: -0.8em">Projects</span>
                   </div>
                 </a>
               </li>
@@ -183,39 +188,43 @@
               <li
                 class="masthead__menu-item"
                 id="resume-link"
-                style="margin-right: 60px; margin-bottom: 10px"
+                style="
+                  margin-right: 60px;
+                  margin-bottom: 1em;
+                  min-width: 3em;
+                  margin-left: 0.8em;
+                "
               >
-                <a class="animated fadeInDown3 hobbies" href="resume.html">
+                <a class="animated fadeInDown3 resume" href="design.html">
                   <div style="display: flex; align-items: center">
                     <div
-                      style="
-                        min-width: 30px;
-                        min-height: 30px;
-                        margin-left: -4px;
-                      "
+                      style="min-width: 2em; min-height: 2em; margin-left: -4px"
                     >
                       <img
                         id="resume-image"
                         src="./photos/still.png"
                         style="
-                          min-width: 19px;
-                          min-height: 19px;
-                          margin-left: 5.5px;
-                          margin-bottom: 4px;
+                          min-width: 1em;
+                          min-height: 1em;
+                          margin-left: 0em;
+                          margin-right: -4em;
+                          margin-bottom: -0.3em;
                         "
                       />
                       <img
                         id="resume-spin-image"
                         src="./photos/spin.gif"
                         style="
-                          min-width: 30px;
-                          min-height: 30px;
+                          min-width: 1.6em;
+                          min-height: 1.6em;
+                          margin-bottom: -0.5em;
                           display: none;
-                          padding-left: -15px;
+                          padding-left: -7em;
+                          margin-left: -0.3em;
                         "
                       />
                     </div>
-                    <span style="margin-bottom: 0px">Resume</span>
+                    <span style="margin-left: -0.8em">Resume</span>
                   </div>
                 </a>
               </li>
@@ -223,39 +232,43 @@
               <li
                 class="masthead__menu-item"
                 id="contact-link"
-                style="margin-bottom: 10px; min-width: 10px"
+                style="
+                  margin-right: 60px;
+                  margin-bottom: 1em;
+                  min-width: 3em;
+                  margin-left: 0.8em;
+                "
               >
-                <a class="animated fadeInDown3 hobbies" href="contact.html">
+                <a class="animated fadeInDown3 contact" href="design.html">
                   <div style="display: flex; align-items: center">
                     <div
-                      style="
-                        min-width: 30px;
-                        min-height: 30px;
-                        margin-left: -4px;
-                      "
+                      style="min-width: 2em; min-height: 2em; margin-left: -4px"
                     >
                       <img
                         id="contact-image"
                         src="./photos/still.png"
                         style="
-                          min-width: 19px;
-                          min-height: 19px;
-                          margin-left: 5.5px;
-                          margin-bottom: 4px;
+                          min-width: 1em;
+                          min-height: 1em;
+                          margin-left: 0em;
+                          margin-right: -4em;
+                          margin-bottom: -0.3em;
                         "
                       />
                       <img
                         id="contact-spin-image"
                         src="./photos/spin.gif"
                         style="
-                          min-width: 30px;
-                          min-height: 30px;
+                          min-width: 1.6em;
+                          min-height: 1.6em;
+                          margin-bottom: -0.5em;
                           display: none;
-                          padding-left: -13px;
+                          padding-left: -7em;
+                          margin-left: -0.3em;
                         "
                       />
                     </div>
-                    <span style="margin-bottom: 0px">Contact Me</span>
+                    <span style="margin-left: -0.8em">Contact Me</span>
                   </div>
                 </a>
               </li>
