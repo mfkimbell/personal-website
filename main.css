@@ -33,6 +33,77 @@
 
 }
 
+#resume-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+#resume-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#resume-link img {
+  top: 0;
+  left: 0;
+}
+
+#resume-link #resume-spin-image {
+  display: none;
+}
+
+/* Show the spin.gif when the link is hovered */
+#resume-link:hover #resume-spin-image {
+  margin-bottom: -1px;
+  margin-top: -5px;
+  animation: none; /* Reset the animation on hover */
+}
+
+#resume-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+
+#resume-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+#contact-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#contact-link img {
+  top: 0;
+  left: 0;
+}
+
+#contact-link #contact-spin-image {
+  display: none;
+}
+
+/* Show the spin.gif when the link is hovered */
+#contact-link:hover #contact-spin-image {
+  margin-bottom: -1px;
+  margin-top: -5px;
+  animation: none; /* Reset the animation on hover */
+}
+
+#contact-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
 
 
 

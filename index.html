@@ -102,11 +102,11 @@
               />
             </a>
 
-            <ul class="visible-links">
+            <ul class="visible-links" style="margin-bottom: 20px">
               <li
                 class="masthead__menu-item"
                 id="hobbies-link"
-                style="margin-right: 60px"
+                style="margin-right: 60px; margin-bottom: 10px"
               >
                 <a class="animated fadeInDown3 hobbies" href="design.html">
                   <div style="display: flex; align-items: center">
@@ -123,8 +123,8 @@
                         style="
                           min-width: 19px;
                           min-height: 19px;
-                          margin-left: 5px;
-                          margin-bottom: 4px;
+                          margin-left: 5.5px;
+                          margin-bottom: 5px;
                         "
                       />
                       <img
@@ -135,16 +135,21 @@
                           min-height: 30px;
                           display: none;
                           padding-left: -15px;
+                          margin-bottom: -0px;
                         "
                       />
                     </div>
-                    <span style="margin-left: 0px">Hobbies</span>
+                    <span style="margin-bottom: 0px">Hobbies</span>
                   </div>
                 </a>
               </li>
 
-              <li class="masthead__menu-item" id="project-link">
-                <a class="animated fadeInDown3 project" href="design.html">
+              <li
+                class="masthead__menu-item"
+                id="project-link"
+                style="margin-right: 60px"
+              >
+                <a class="animated fadeInDown3 project" href="index.html">
                   <div style="display: flex; align-items: center">
                     <div style="min-width: 30px; min-height: 30px">
                       <img
@@ -153,32 +158,96 @@
                         style="
                           min-width: 30px;
                           min-height: 30px;
-                          margin-bottom: 2px;
+                          margin-bottom: 5px;
                           margin-left: -4px;
                         "
                       />
                     </div>
-                    <span style="margin-left: -3px">Projects</span>
+                    <span style="margin-left: -3px; margin-bottom: 4px"
+                      >Projects</span
+                    >
                   </div>
                 </a>
               </li>
 
-              <li class="masthead__menu-item">
-                <a class="animated fadeInDown4 projects" href="index.html">
-                  Projects
+              <li
+                class="masthead__menu-item"
+                id="resume-link"
+                style="margin-right: 60px; margin-bottom: 10px"
+              >
+                <a class="animated fadeInDown3 hobbies" href="resume.html">
+                  <div style="display: flex; align-items: center">
+                    <div
+                      style="
+                        min-width: 30px;
+                        min-height: 30px;
+                        margin-left: -4px;
+                      "
+                    >
+                      <img
+                        id="resume-image"
+                        src="./photos/still.png"
+                        style="
+                          min-width: 19px;
+                          min-height: 19px;
+                          margin-left: 5.5px;
+                          margin-bottom: 4px;
+                        "
+                      />
+                      <img
+                        id="resume-spin-image"
+                        src="./photos/spin.gif"
+                        style="
+                          min-width: 30px;
+                          min-height: 30px;
+                          display: none;
+                          padding-left: -15px;
+                        "
+                      />
+                    </div>
+                    <span style="margin-bottom: 0px">Resume</span>
+                  </div>
                 </a>
               </li>
 
-              <li class="masthead__menu-item">
-                <a class="animated fadeInDown5 menuspace" href="resume.html"
-                  >Resume</a
-                >
-              </li>
-
-              <li class="masthead__menu-item">
-                <a class="animated fadeInDown6" href="contact.html"
-                  >Contact Me</a
-                >
+              <li
+                class="masthead__menu-item"
+                id="contact-link"
+                style="margin-right: 60px; margin-bottom: 10px"
+              >
+                <a class="animated fadeInDown3 hobbies" href="contact.html">
+                  <div style="display: flex; align-items: center">
+                    <div
+                      style="
+                        min-width: 30px;
+                        min-height: 30px;
+                        margin-left: -4px;
+                      "
+                    >
+                      <img
+                        id="contact-image"
+                        src="./photos/still.png"
+                        style="
+                          min-width: 19px;
+                          min-height: 19px;
+                          margin-left: 5.5px;
+                          margin-bottom: 4px;
+                        "
+                      />
+                      <img
+                        id="contact-spin-image"
+                        src="./photos/spin.gif"
+                        style="
+                          min-width: 30px;
+                          min-height: 30px;
+                          display: none;
+                          padding-left: -13px;
+                        "
+                      />
+                    </div>
+                    <span style="margin-bottom: 0px">Contact Me</span>
+                  </div>
+                </a>
               </li>
             </ul>
             <script>
@@ -205,6 +274,62 @@
                   // Show the original image when not hovering
                   hobbiesImage.style.display = "inline-block";
                   hobbiesSpinImage.style.display = "none";
+                });
+              });
+            </script>
+
+            <script>
+              // Wait for the DOM to be ready
+              document.addEventListener("DOMContentLoaded", function () {
+                var resumeLink = document.getElementById("resume-link");
+                var resumeImage = document.getElementById("resume-image");
+                var resumeSpinImage =
+                  document.getElementById("resume-spin-image");
+
+                // Add a mouseover event listener
+                resumeLink.addEventListener("mouseover", function () {
+                  // Hide the original image when the spin.gif is visible
+                  resumeImage.style.display = "none";
+                  resumeSpinImage.style.display = "inline-block";
+
+                  // Restart the animation by changing the src attribute
+                  resumeSpinImage.src =
+                    "./photos/spin.gif?" + new Date().getTime();
+                });
+
+                // Add a mouseout event listener
+                resumeLink.addEventListener("mouseout", function () {
+                  // Show the original image when not hovering
+                  resumeImage.style.display = "inline-block";
+                  resumeSpinImage.style.display = "none";
+                });
+              });
+            </script>
+
+            <script>
+              // Wait for the DOM to be ready
+              document.addEventListener("DOMContentLoaded", function () {
+                var contactLink = document.getElementById("contact-link");
+                var contactImage = document.getElementById("contact-image");
+                var contactSpinImage =
+                  document.getElementById("contact-spin-image");
+
+                // Add a mouseover event listener
+                contactLink.addEventListener("mouseover", function () {
+                  // Hide the original image when the spin.gif is visible
+                  contactImage.style.display = "none";
+                  contactSpinImage.style.display = "inline-block";
+
+                  // Restart the animation by changing the src attribute
+                  contactSpinImage.src =
+                    "./photos/spin.gif?" + new Date().getTime();
+                });
+
+                // Add a mouseout event listener
+                contactLink.addEventListener("mouseout", function () {
+                  // Show the original image when not hovering
+                  contactImage.style.display = "inline-block";
+                  contactSpinImage.style.display = "none";
                 });
               });
             </script>
