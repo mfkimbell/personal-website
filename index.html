@@ -85,6 +85,7 @@
       <div class="masthead__inner-wrap">
         <div class="masthead__menu">
           <nav
+            style="overflow: visible"
             id="site-nav 
           "
             class="greedy-nav"
@@ -102,7 +103,16 @@
               />
             </a>
 
-            <ul class="visible-links" style="margin-bottom: 20px">
+            <ul
+              class="visible-links"
+              style="
+                margin-bottom: 20px;
+                padding-right: 50px;
+                margin-right: 50px;
+                overflow: visible;
+                display: flex;
+              "
+            >
               <li
                 class="masthead__menu-item"
                 id="hobbies-link"
@@ -124,7 +134,7 @@
                           min-width: 19px;
                           min-height: 19px;
                           margin-left: 5.5px;
-                          margin-bottom: 5px;
+                          margin-bottom: 4px;
                         "
                       />
                       <img
@@ -135,7 +145,7 @@
                           min-height: 30px;
                           display: none;
                           padding-left: -15px;
-                          margin-bottom: -0px;
+                          margin-bottom: -1px;
                         "
                       />
                     </div>
@@ -213,7 +223,7 @@
               <li
                 class="masthead__menu-item"
                 id="contact-link"
-                style="margin-right: 60px; margin-bottom: 10px"
+                style="margin-bottom: 10px; min-width: 10px"
               >
                 <a class="animated fadeInDown3 hobbies" href="contact.html">
                   <div style="display: flex; align-items: center">

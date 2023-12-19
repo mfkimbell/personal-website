@@ -2119,7 +2119,7 @@ th {
   color: #CCCCCC;
   clear: both;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 4em;
   padding: 1em;
   max-width: 100%;
   display: -webkit-box;
