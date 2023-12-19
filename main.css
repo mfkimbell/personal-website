@@ -1,10 +1,83 @@
+#hobbies-link {
+  position: relative;
+  /* Preserve the inline-block display */
 
- /*!
- * Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
- * Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
- * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
- */
+}
 
+#hobbies-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#hobbies-link img {
+  top: 0;
+  left: 0;
+}
+
+#hobbies-link #hobbies-spin-image {
+  display: none;
+}
+
+/* Show the spin.gif when the link is hovered */
+#hobbies-link:hover #hobbies-spin-image {
+  margin-bottom: -1px;
+  margin-top: -5px;
+  animation: none; /* Reset the animation on hover */
+}
+
+#hobbies-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+
+
+
+#project-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#project-link img {
+  top: 0;
+  left: 0;
+}
+
+/* Show the spin.gif when the link is hovered */
+#project-link:hover #project-spin-image {
+
+  animation: none; /* Reset the animation on hover */
+ 
+}
+
+#project-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+
+
+
+
+
+
+
+
+.projects {
+  margin-left: 10em;
+  padding-left: 80px;
+}
+
+.menuspace {
+  margin-left: 2em;
+  padding-left: 0.5em;
+}
  .animated {
   background-repeat: no-repeat;
   background-position: left top;

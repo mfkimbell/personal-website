@@ -101,17 +101,78 @@
                 itemprop="image"
               />
             </a>
+
             <ul class="visible-links">
-              <li class="masthead__menu-item">
-                <a class="animated fadeInDown3" href="design.html">Hobbies</a>
+              <li
+                class="masthead__menu-item"
+                id="hobbies-link"
+                style="margin-right: 60px"
+              >
+                <a class="animated fadeInDown3 hobbies" href="design.html">
+                  <div style="display: flex; align-items: center">
+                    <div
+                      style="
+                        min-width: 30px;
+                        min-height: 30px;
+                        margin-left: -4px;
+                      "
+                    >
+                      <img
+                        id="hobbies-image"
+                        src="./photos/still.png"
+                        style="
+                          min-width: 19px;
+                          min-height: 19px;
+                          margin-left: 5px;
+                          margin-bottom: 4px;
+                        "
+                      />
+                      <img
+                        id="hobbies-spin-image"
+                        src="./photos/spin.gif"
+                        style="
+                          min-width: 30px;
+                          min-height: 30px;
+                          display: none;
+                          padding-left: -15px;
+                        "
+                      />
+                    </div>
+                    <span style="margin-left: 0px">Hobbies</span>
+                  </div>
+                </a>
+              </li>
+
+              <li class="masthead__menu-item" id="project-link">
+                <a class="animated fadeInDown3 project" href="design.html">
+                  <div style="display: flex; align-items: center">
+                    <div style="min-width: 30px; min-height: 30px">
+                      <img
+                        id="project-spin-image"
+                        src="./photos/spin2.gif"
+                        style="
+                          min-width: 30px;
+                          min-height: 30px;
+                          margin-bottom: 2px;
+                          margin-left: -4px;
+                        "
+                      />
+                    </div>
+                    <span style="margin-left: -3px">Projects</span>
+                  </div>
+                </a>
               </li>
 
               <li class="masthead__menu-item">
-                <a class="animated fadeInDown4" href="index.html">Projects</a>
+                <a class="animated fadeInDown4 projects" href="index.html">
+                  Projects
+                </a>
               </li>
 
               <li class="masthead__menu-item">
-                <a class="animated fadeInDown5" href="resume.html">Resume</a>
+                <a class="animated fadeInDown5 menuspace" href="resume.html"
+                  >Resume</a
+                >
               </li>
 
               <li class="masthead__menu-item">
@@ -120,6 +181,33 @@
                 >
               </li>
             </ul>
+            <script>
+              // Wait for the DOM to be ready
+              document.addEventListener("DOMContentLoaded", function () {
+                var hobbiesLink = document.getElementById("hobbies-link");
+                var hobbiesImage = document.getElementById("hobbies-image");
+                var hobbiesSpinImage =
+                  document.getElementById("hobbies-spin-image");
+
+                // Add a mouseover event listener
+                hobbiesLink.addEventListener("mouseover", function () {
+                  // Hide the original image when the spin.gif is visible
+                  hobbiesImage.style.display = "none";
+                  hobbiesSpinImage.style.display = "inline-block";
+
+                  // Restart the animation by changing the src attribute
+                  hobbiesSpinImage.src =
+                    "./photos/spin.gif?" + new Date().getTime();
+                });
+
+                // Add a mouseout event listener
+                hobbiesLink.addEventListener("mouseout", function () {
+                  // Show the original image when not hovering
+                  hobbiesImage.style.display = "inline-block";
+                  hobbiesSpinImage.style.display = "none";
+                });
+              });
+            </script>
 
             <button class="greedy-nav__toggle hidden" type="button" count="0">
               <span class="visually-hidden">Toggle menu</span>
@@ -207,6 +295,7 @@
             >
               Projects
             </h1>
+
             <p class="content1 animated fadeInRight">
               Projects all lead to their GitHub respository, where there is more
               documentation and detail.
