@@ -1,3 +1,45 @@
+#project222-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+#project222-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#project222-link img {
+  top: 0;
+  left: 0;
+}
+
+#project222-link #project222-spin-image {
+  display: none;
+}
+
+/* Show the spin.gif when the link is hovered */
+#project222-link:hover #project222-spin-image {
+  margin-bottom: -1px;
+  margin-top: -5px;
+  animation: none; /* Reset the animation on hover */
+}
+
+#project222-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+
+#project222-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
 #hobbies-link {
   position: relative;
   /* Preserve the inline-block display */
@@ -32,6 +74,8 @@
   /* Preserve the inline-block display */
 
 }
+
+
 
 #resume-link {
   position: relative;
@@ -74,6 +118,40 @@
   /* Preserve the inline-block display */
 
 }
+#hobbies2-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
+
+#hobbies2-link a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#hobbies2-link img {
+  top: 0;
+  left: 0;
+}
+
+#hobbies2-link #hobbies2-spin-image {
+  display: none;
+}
+
+/* Show the spin.gif when the link is hovered */
+#hobbies2-link:hover #hobbies2-spin-image {
+  margin-bottom: -1px;
+  margin-top: -5px;
+  animation: none; /* Reset the animation on hover */
+}
+
+#hobbies2-link {
+  position: relative;
+  /* Preserve the inline-block display */
+
+}
 
 #contact-link a {
   position: absolute;
@@ -107,30 +185,6 @@
 
 
 
-#project-link a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-#project-link img {
-  top: 0;
-  left: 0;
-}
-
-/* Show the spin.gif when the link is hovered */
-#project-link:hover #project-spin-image {
-
-  animation: none; /* Reset the animation on hover */
- 
-}
-
-#project-link {
-  position: relative;
-  /* Preserve the inline-block display */
-
-}
 
 
 
