@@ -2173,8 +2173,8 @@ th {
   background-color: #181818;
   color: #CCCCCC;
   clear: both;
-  margin-left: auto;
-  margin-right: auto;
+ 
+ 
   padding: 1em;
   overflow: visible;
   max-width: 100%;
@@ -2192,11 +2192,11 @@ th {
   clear: both;
   content: "";
   display: table;
-  margin-right: 2em;
+  
 }
 @media (min-width: 80em) {
   .masthead__inner-wrap {
-    max-width: 1550px;
+   
   }
 }
 .masthead__inner-wrap nav {
@@ -2427,6 +2427,7 @@ th {
   -ms-flex-align: center;
   align-items: center;
   min-height: 2em;
+  justify-content: space-between;
 
 }
 .greedy-nav a {
