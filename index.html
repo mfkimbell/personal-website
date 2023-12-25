@@ -116,45 +116,6 @@
               <li
                 class="masthead__menu-item"
                 id="hobbies-link"
-                style="margin-right: 60px; margin-bottom: 1em; min-width: 3em"
-              >
-                <a class="animated fadeInDown3 hobbies" href="design.html">
-                  <div style="display: flex; align-items: center">
-                    <div
-                      style="min-width: 2em; min-height: 2em; margin-left: -4px"
-                    >
-                      <img
-                        id="hobbies-image"
-                        src="./photos/still.png"
-                        style="
-                          min-width: 1em;
-                          min-height: 1em;
-                          margin-left: 0em;
-                          margin-right: -4em;
-                          margin-bottom: -0.3em;
-                        "
-                      />
-                      <img
-                        id="hobbies-spin-image"
-                        src="./photos/spin.gif"
-                        style="
-                          min-width: 1.6em;
-                          min-height: 1.6em;
-                          margin-bottom: -0.5em;
-                          display: none;
-                          padding-left: -7em;
-                          margin-left: -0.3em;
-                        "
-                      />
-                    </div>
-                    <span style="margin-left: -0.8em">Hobbies</span>
-                  </div>
-                </a>
-              </li>
-
-              <li
-                class="masthead__menu-item"
-                id="hobbies-link"
                 style="
                   margin-right: 60px;
                   margin-left: 0.8em;
@@ -168,7 +129,7 @@
                       style="min-width: 2em; min-height: 2em; margin-left: -4px"
                     >
                       <img
-                        id="hobbies-spin-image2"
+                        id="hobbie-spin-imag"
                         src="./photos/spin.gif"
                         style="
                           min-width: 1.6em;
@@ -189,7 +150,7 @@
                 class="masthead__menu-item"
                 id="resume-link"
                 style="
-                  margin-right: 60px;
+                  margin-right: 75px;
                   margin-bottom: 1em;
                   min-width: 3em;
                   margin-left: 0.8em;
@@ -225,6 +186,45 @@
                       />
                     </div>
                     <span style="margin-left: -0.8em">Resume</span>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="masthead__menu-item"
+                id="hobbies2-link"
+                style="margin-right: 60px; margin-bottom: 1em; min-width: 3em"
+              >
+                <a class="animated fadeInDown3 hobbies" href="design.html">
+                  <div style="display: flex; align-items: center">
+                    <div
+                      style="min-width: 2em; min-height: 2em; margin-left: -4px"
+                    >
+                      <img
+                        id="hobbies2-image"
+                        src="./photos/still.png"
+                        style="
+                          min-width: 1em;
+                          min-height: 1em;
+                          margin-left: 0em;
+                          margin-right: -4em;
+                          margin-bottom: -0.3em;
+                        "
+                      />
+                      <img
+                        id="hobbies2-spin-image"
+                        src="./photos/spin.gif"
+                        style="
+                          min-width: 1.6em;
+                          min-height: 1.6em;
+                          margin-bottom: -0.5em;
+                          display: none;
+                          padding-left: -7em;
+                          margin-left: -0.3em;
+                        "
+                      />
+                    </div>
+                    <span style="margin-left: -0.8em">Hobbies</span>
                   </div>
                 </a>
               </li>
@@ -276,27 +276,28 @@
             <script>
               // Wait for the DOM to be ready
               document.addEventListener("DOMContentLoaded", function () {
-                var hobbiesLink = document.getElementById("hobbies-link");
-                var hobbiesImage = document.getElementById("hobbies-image");
-                var hobbiesSpinImage =
-                  document.getElementById("hobbies-spin-image");
+                var hobbies2Link = document.getElementById("hobbies2-link");
+                var hobbies2Image = document.getElementById("hobbies2-image");
+                var hobbies2SpinImage = document.getElementById(
+                  "hobbies2-spin-image"
+                );
 
                 // Add a mouseover event listener
-                hobbiesLink.addEventListener("mouseover", function () {
+                hobbies2Link.addEventListener("mouseover", function () {
                   // Hide the original image when the spin.gif is visible
-                  hobbiesImage.style.display = "none";
-                  hobbiesSpinImage.style.display = "inline-block";
+                  hobbies2Image.style.display = "none";
+                  hobbies2SpinImage.style.display = "inline-block";
 
                   // Restart the animation by changing the src attribute
-                  hobbiesSpinImage.src =
+                  hobbies2SpinImage.src =
                     "./photos/spin.gif?" + new Date().getTime();
                 });
 
                 // Add a mouseout event listener
-                hobbiesLink.addEventListener("mouseout", function () {
+                hobbies2Link.addEventListener("mouseout", function () {
                   // Show the original image when not hovering
-                  hobbiesImage.style.display = "inline-block";
-                  hobbiesSpinImage.style.display = "none";
+                  hobbies2Image.style.display = "inline-block";
+                  hobbies2SpinImage.style.display = "none";
                 });
               });
             </script>
