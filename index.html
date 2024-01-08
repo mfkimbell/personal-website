@@ -8,8 +8,9 @@
     id="dark-mode-general-link"
   /><style lang="en" type="text/css" id="dark-mode-custom-style"></style
   ><style lang="en" type="text/css" id="dark-mode-native-style"></style
-  ><style lang="en" type="text/css" id="dark-mode-native-sheet"></style
-  ><head>
+  ><style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+
+  <head>
     <!-- HTML Meta Tags -->
     <title>Mitchell Kimbell Personal Website</title>
     <meta name="description" content="Project Portfolio" />
@@ -446,221 +447,394 @@
             </h1>
 
             <p class="content1 animated fadeInRight">
-              Projects all lead to their GitHub respository, where there is more
-              documentation and detail.
+              Projects all lead to Github for more documentation. Click
+              <img
+                class=""
+                src="./photos/more.png"
+                style="max-width: 15px; margin-bottom: 5px"
+              />
+              for Architecture Diagram.
             </p>
 
-            <a href="https://github.com/mfkimbell/terraform-aws-DevOps">
-              <div class="container2">
-                <div class="item2 animated fadeInRight2">
-                  <img class="projectIcon" src="./photos/devops2.png" />
-                  <div class="container3 content1">
-                    <b class="content3"> Terraform AWS DevOps Pipeline</b>
-                    <p>
-                      An <b>AWS</b> pipeline created with <b>Terraform</b>.
-                      <b>Ansible </b> playbooks build a <b>Jenkins</b> server
-                      with a build slave, which analyzes code with
-                      <b>SonarQube</b>, then builds a container with
-                      <b>Docker</b>, publishes on <b>JFrog Artifactory</b>, and
-                      deploys on <b>Kubernetes</b>.
+            <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/terraform-aws-DevOps">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight2">
+                    <img class="projectIcon" src="./photos/devops2.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> Terraform AWS DevOps Pipeline</b>
+                      <p>
+                        An <b>AWS</b> pipeline created with <b>Terraform</b>.
+                        <b>Ansible </b> playbooks build a <b>Jenkins</b> server
+                        with a build slave, which analyzes code with
+                        <b>SonarQube</b>, then builds a container with
+                        <b>Docker</b>, publishes on <b>JFrog Artifactory</b>,
+                        and deploys on <b>Kubernetes</b>.
 
-                      <span class="iconDivide">
-                        <span class="tool">Terraform</span>
-                        <span class="tool">AWS-EC2</span>
-                        <span class="tool">AWS-EKS</span>
-                        <span class="tool">Jenkins</span>
-                        <span class="tool">SonarQube</span>
-                        <span class="tool">JFrog Artifactory</span>
-                        <span class="tool"> Ansible </span>
-                        <span class="tool"> Docker </span>
-                        <span class="tool"> Kubernetes </span>
-                      </span>
-                    </p>
+                        <span class="iconDivide">
+                          <span class="tool">Terraform</span>
+                          <span class="tool">AWS-EC2</span>
+                          <span class="tool">AWS-EKS</span>
+                          <span class="tool">Jenkins</span>
+                          <span class="tool">SonarQube</span>
+                          <span class="tool">JFrog Artifactory</span>
+                          <span class="tool"> Ansible </span>
+                          <span class="tool"> Docker </span>
+                          <span class="tool"> Kubernetes </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight2"
+                onclick="toggleAdditionalImage4()"
+              />
+            </span>
+            <img
+              class="additional-image4"
+              id="additionalImage4"
+              src="./photos/terraform-map.png"
+              alt="Additional Image"
+            />
 
-            <a href="https://github.com/mfkimbell/end-to-end-DevOps">
-              <div class="container2">
-                <div class="item2 animated fadeInRight2">
-                  <img class="projectIcon" src="./photos/devops.png" />
-                  <div class="container3 content1">
-                    <b class="content3"> End-to-End DevOps Pipeline</b>
-                    <p>
-                      A simple web application that updates a live production
-                      through <b>AWS</b> automatically. <b>Jenkins</b> polls for
-                      changes to GitHub source code for a <b>Tomcat</b> server
-                      hosted web application and then executes jobs with
-                      <b>Ansible</b> scripts. These scripts create new
-                      <b>Docker</b> images with the changes, upload those images
-                      to <b>DockerHub</b>, and then deploy the new image into
-                      multiple pods on <b>Kubernetes</b> with a loadbalancer.
-                      <span class="iconDivide">
-                        <span class="tool">AWS-EC2</span>
-                        <span class="tool">AWS-EKS</span>
-                        <span class="tool">Jenkins</span>
-                        <span class="tool"> Tomcat </span>
-                        <span class="tool"> Maven </span>
-                        <span class="tool"> Ansible </span>
-                        <span class="tool"> Docker </span>
-                        <span class="tool"> Kubernetes </span>
-                      </span>
-                    </p>
+            <script>
+              function toggleAdditionalImage4() {
+                var additionalImage =
+                  document.getElementById("additionalImage4");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/end-to-end-DevOps">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight2">
+                    <img class="projectIcon" src="./photos/devops.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> End-to-End DevOps Pipeline</b>
+                      <p>
+                        A simple web application that updates a live production
+                        through <b>AWS</b> automatically. <b>Jenkins</b> polls
+                        for changes to GitHub source code for a
+                        <b>Tomcat</b> server hosted web application and then
+                        executes jobs with <b>Ansible</b> scripts. These scripts
+                        create new <b>Docker</b> images with the changes, upload
+                        those images to <b>DockerHub</b>, and then deploy the
+                        new image into multiple pods on <b>Kubernetes</b> with a
+                        loadbalancer.
+                        <span class="iconDivide">
+                          <span class="tool">AWS-EC2</span>
+                          <span class="tool">AWS-EKS</span>
+                          <span class="tool">Jenkins</span>
+                          <span class="tool"> Tomcat </span>
+                          <span class="tool"> Maven </span>
+                          <span class="tool"> Ansible </span>
+                          <span class="tool"> Docker </span>
+                          <span class="tool"> Kubernetes </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight2"
+                onclick="toggleAdditionalImage3()"
+              />
+            </span>
+            <img
+              class="additional-image3"
+              id="additionalImage3"
+              src="./photos/end-map.png"
+              alt="Additional Image"
+            />
 
-            <a href="https://github.com/mfkimbell/django-serverless-webapp">
-              <div class="container2">
-                <div class="item2 animated fadeInRight2">
-                  <img class="projectIcon" src="./photos/fargate.png" />
-                  <div class="container3 content1">
-                    <b class="content3"> Serverless Django WebApp</b>
-                    <p>
-                      <b>Django</b> web application that uses <b>Postgres</b> to
-                      handle user data, while leveraging <b>AWS-S3</b> for
-                      storage of static files. The applicaiton was containerized
-                      with <b>Docker</b> and the image was uploading to
-                      <b>Amazon Elastic Container Registery (ECR) </b>. The
-                      image was then used to deploy the applicatino on
-                      <b>Amazon Elastic Container Service (ECS) </b> using the
-                      <b>Fargate</b> serverless launch type. The deployment
-                      includes security measures with HTTPS support and a custom
-                      domain.
+            <script>
+              function toggleAdditionalImage3() {
+                var additionalImage =
+                  document.getElementById("additionalImage3");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
 
-                      <span class="iconDivide">
-                        <span class="tool">AWS CLI</span>
-                        <span class="tool">Boto3</span>
-                        <span class="tool">Certificate Manager</span>
-                        <span class="tool">Django</span>
-                        <span class="tool">Docker</span>
-                        <span class="tool">ECR</span>
-                        <span class="tool"> ECS </span>
-                        <span class="tool"> Fargate</span>
-                        <span class="tool"> Gunicorn </span>
-                        <span class="tool"> Postgres </span>
-                        <span class="tool"> RDS</span>
-                        <span class="tool"> Route53 </span>
-                      </span>
-                    </p>
+            <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/django-serverless-webapp">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight2">
+                    <img class="projectIcon" src="./photos/fargate.png" />
+                    <div class="container3 content1">
+                      <b class="content3">Serverless Django WebApp</b>
+                      <p>
+                        <b>Django</b> web application that uses
+                        <b>Postgres</b> to handle user data, while leveraging
+                        <b>AWS-S3</b> for storage of static files. The
+                        applicaiton was containerized with <b>Docker</b> and the
+                        image was uploading to
+                        <b>Amazon Elastic Container Registery (ECR) </b>. The
+                        image was then used to deploy the applicatino on
+                        <b>Amazon Elastic Container Service (ECS) </b> using the
+                        <b>Fargate</b> serverless launch type. The deployment
+                        includes security measures with HTTPS support and a
+                        custom domain.
+
+                        <span class="iconDivide">
+                          <span class="tool">AWS CLI</span>
+                          <span class="tool">Boto3</span>
+                          <span class="tool">Certificate Manager</span>
+                          <span class="tool">Django</span>
+                          <span class="tool">Docker</span>
+                          <span class="tool">ECR</span>
+                          <span class="tool"> ECS </span>
+                          <span class="tool"> Fargate</span>
+                          <span class="tool"> Gunicorn </span>
+                          <span class="tool"> Postgres </span>
+                          <span class="tool"> RDS</span>
+                          <span class="tool"> Route53 </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
 
-            <a href="https://github.com/mfkimbell/catalog-web-scraper">
-              <div class="container2">
-                <div class="item2 animated fadeInRight3">
-                  <img class="projectIcon" src="./photos/scrape.png" />
-                  <div class="container3 content1">
-                    <b class="content3"> Catalog Web Scraper</b>
-                    <p>
-                      A <b>Python</b> bookstore web scraper to extract book
-                      information from an online catalogue using <b>Xlml</b>,
-                      scrape that information asynchronously using
-                      <b>Asyncio</b> and <b>RabbitMQ</b> to queue work items,
-                      store information in a <b>PostgreSQL</b> database, allow
-                      users to query data from the created database using
-                      <b>Flask</b>, and pull data in a way that allows for
-                      additional book information than the website provides. The
-                      project was containerized using <b>Docker</b>.
-                      <span class="iconDivide">
-                        <span class="tool">Python</span>
-                        <span class="tool">Xlml</span>
-                        <span class="tool"> Asyncio </span>
-                        <span class="tool"> RabbitMQ </span>
-                        <span class="tool"> PostgreSQL </span>
-                        <span class="tool"> Flask </span>
-                        <span class="tool"> Docker </span>
-                      </span>
-                    </p>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight2"
+                onclick="toggleAdditionalImage()"
+              />
+            </span>
+            <img
+              class="additional-image"
+              id="additionalImage"
+              src="./photos/django-map.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage() {
+                var additionalImage =
+                  document.getElementById("additionalImage");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/catalog-web-scraper">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight3">
+                    <img class="projectIcon" src="./photos/scrape.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> Catalog Web Scraper</b>
+                      <p>
+                        A <b>Python</b> bookstore web scraper to extract book
+                        information from an online catalogue using <b>Xlml</b>,
+                        scrape that information asynchronously using
+                        <b>Asyncio</b> and <b>RabbitMQ</b> to queue work items,
+                        store information in a <b>PostgreSQL</b> database, allow
+                        users to query data from the created database using
+                        <b>Flask</b>, and pull data in a way that allows for
+                        additional book information than the website provides.
+                        The project was containerized using <b>Docker</b>.
+                        <span class="iconDivide">
+                          <span class="tool">Python</span>
+                          <span class="tool">Xlml</span>
+                          <span class="tool"> Asyncio </span>
+                          <span class="tool"> RabbitMQ </span>
+                          <span class="tool"> PostgreSQL </span>
+                          <span class="tool"> Flask </span>
+                          <span class="tool"> Docker </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
 
-            <a href="https://github.com/mfkimbell/react-movie-database">
-              <div class="container2">
-                <div class="item2 animated fadeInRight3">
-                  <img class="projectIcon" src="./photos/movie.png" />
-                  <div class="container3 content1">
-                    <b class="content3"> React Movie Database GUI</b>
-                    <p>
-                      A <b>C#</b> and <b>React JS </b> GUI that connects to
-                      <b> Microsoft Sql Server </b> using
-                      <b>.NET Entity Framework CORE </b> to do CRUD operations
-                      to manipulate movie data. The user can add, like, delete,
-                      and sort data in various ways, and these changes with be
-                      reflected in the sql database and the GUI.
-                      <span class="iconDivide">
-                        <span class="tool">C#</span>
-                        <span class="tool">ReactJS</span>
-                        <span class="tool"> Microsoft SQL Server </span>
-                        <span class="tool"> .NET6 </span>
-                        <span class="tool"> Entity Framework Core </span>
-                      </span>
-                    </p>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight3"
+                onclick="toggleAdditionalImage2()"
+              />
+            </span>
+            <img
+              class="additional-image2"
+              id="additionalImage2"
+              src="./photos/catalogue-map.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage2() {
+                var additionalImage =
+                  document.getElementById("additionalImage2");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/react-movie-database">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight3">
+                    <img class="projectIcon" src="./photos/movie.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> React Movie Database GUI</b>
+                      <p>
+                        A <b>C#</b> and <b>React JS </b> GUI that connects to
+                        <b> Microsoft Sql Server </b> using
+                        <b>.NET Entity Framework CORE </b> to do CRUD operations
+                        to manipulate movie data. The user can add, like,
+                        delete, and sort data in various ways, and these changes
+                        with be reflected in the sql database and the GUI.
+                        <span class="iconDivide">
+                          <span class="tool">C#</span>
+                          <span class="tool">ReactJS</span>
+                          <span class="tool"> Microsoft SQL Server </span>
+                          <span class="tool"> .NET6 </span>
+                          <span class="tool"> Entity Framework Core </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
 
-            <a href="https://github.com/mfkimbell/cloud-file-upload-service">
-              <div class="container2">
-                <div class="item2 animated fadeInRight4">
-                  <img class="projectIcon" src="./photos/aws.png" />
-                  <div class="container3 content1">
-                    <b class="content3"> Cloud File Upload Service</b>
-                    <p>
-                      An <b>AWS</b> project that uses <b> Lambda </b> and
-                      <b> SNS </b> to allow users to access a
-                      <b>Flask</b> webserver to send email links to specific
-                      users to download uploaded files. User information is
-                      stored in a <b>MySQL</b> RDS Database.
-                      <span class="iconDivide">
-                        <span class="tool">AWS</span>
-                        <span class="tool">Lambda</span>
-                        <span class="tool"> SNS </span>
-                        <span class="tool"> Flask </span>
-                        <span class="tool"> MySQL </span>
-                      </span>
-                    </p>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight3"
+                onclick="toggleAdditionalImage5()"
+              />
+            </span>
+            <img
+              class="additional-image5"
+              id="additionalImage5"
+              src="./photos/book-map.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage5() {
+                var additionalImage =
+                  document.getElementById("additionalImage5");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/cloud-file-upload-service">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight4">
+                    <img class="projectIcon" src="./photos/aws.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> Cloud File Upload Service</b>
+                      <p>
+                        An <b>AWS</b> project that uses <b> Lambda </b> and
+                        <b> SNS </b> to allow users to access a
+                        <b>Flask</b> webserver to send email links to specific
+                        users to download uploaded files. User information is
+                        stored in a <b>MySQL</b> RDS Database.
+                        <span class="iconDivide">
+                          <span class="tool">AWS</span>
+                          <span class="tool">Lambda</span>
+                          <span class="tool"> SNS </span>
+                          <span class="tool"> Flask </span>
+                          <span class="tool"> MySQL </span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
 
-            <a
-              href="https://github.com/mfkimbell/github-actions-custom-actions"
-            >
-              <div class="container2">
-                <div class="item2 animated fadeInRight5">
-                  <img class="projectIcon" src="./photos/aws2.png" />
-                  <div class="container3 content1">
-                    <b class="content3"> S3 Website Hosting Custom Action </b>
-                    <p>
-                      This project uses various Github Custom
-                      <b> Composite Actions, Javscript Actions,</b>and
-                      <b> Docker Actions</b>. Using these custom actions, I set
-                      up a CI/CD pipeline and deploy a static website to
-                      <b>Amazon S3</b>. These actions are trigger automatically
-                      upon code commit.
-                      <span class="iconDivide">
-                        <span class="tool">Github Actions</span>
-                        <span class="tool">Github CI/CD</span>
-                        <span class="tool">Composite Actions</span>
-                        <span class="tool">Javascript Actions</span>
-                        <span class="tool">Docker Actions</span>
-                        <span class="tool">AWS</span>
-                        <span class="tool">S3</span>
-                      </span>
-                    </p>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight4"
+                onclick="toggleAdditionalImage6()"
+              />
+            </span>
+            <img
+              class="additional-image6"
+              id="additionalImage6"
+              src="./photos/share-map.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage6() {
+                var additionalImage =
+                  document.getElementById("additionalImage6");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
+              <a
+                href="https://github.com/mfkimbell/github-actions-custom-actions"
+              >
+                <div class="container2">
+                  <div class="item2 animated fadeInRight5">
+                    <img class="projectIcon" src="./photos/aws2.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> S3 Website Hosting Custom Action </b>
+                      <p>
+                        This project uses various Github Custom
+                        <b> Composite Actions, Javscript Actions,</b>and
+                        <b> Docker Actions</b>. Using these custom actions, I
+                        set up a CI/CD pipeline and deploy a static website to
+                        <b>Amazon S3</b>. These actions are trigger
+                        automatically upon code commit.
+                        <span class="iconDivide">
+                          <span class="tool">Github Actions</span>
+                          <span class="tool">Github CI/CD</span>
+                          <span class="tool">Composite Actions</span>
+                          <span class="tool">Javascript Actions</span>
+                          <span class="tool">Docker Actions</span>
+                          <span class="tool">AWS</span>
+                          <span class="tool">S3</span>
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight5"
+                onclick="toggleAdditionalImage7()"
+              />
+            </span>
+            <img
+              class="additional-image7"
+              id="additionalImage7"
+              src="./photos/actions-map.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage7() {
+                var additionalImage =
+                  document.getElementById("additionalImage7");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
 
             <a href="https://github.com/mfkimbell/github-actions-pipeline">
               <div class="container2">
@@ -690,7 +864,7 @@
               href="https://github.com/mfkimbell/azure-container-and-blob-management"
             >
               <div class="container2">
-                <div class="item2 animated fadeInRight4">
+                <div class="item2 animated fadeInRight5">
                   <img class="projectIcon" src="./photos/azure.png" />
                   <div class="container3 content1">
                     <b class="content3"> Azure Blob/Container Management App</b>
@@ -801,21 +975,26 @@
               </div>
             </a>
 
-            <a href="https://github.com/mfkimbell/legends-of-pygame/tree/main">
+            <a href="https://github.com/mfkimbell/healthcare-form-autocomplete">
               <div class="container2">
-                <div class="item2 animated fadeInRight6">
-                  <img class="projectIcon" src="./photos/zelda.png" />
+                <div class="item2 animated fadeInRight7">
+                  <img class="projectIcon" src="./photos/form.png" />
                   <div class="container3 content1">
-                    <b> Legends of Pygame</b>
+                    <b class="content3"
+                      >Healthcare Form Autocomplete (currently maintain for
+                      hospital)</b
+                    >
                     <p>
-                      A work-in-progress game built from the ground up in
-                      <b>Python</b> using the <b>Pygame</b> library.
-                      Incorporates graphics, collisions, classes for various
-                      entities, world maps, animations, maps that update with
-                      player position, and more.
+                      <b>Selenium</b> webscraper in <b>Python</b> that takes
+                      patient case data from appointments from an excel document
+                      with <b>Pandas</b> and automatically inputs and submits
+                      that data in the hospitals record system.
                       <span class="iconDivide">
+                        <span class="tool">Selenium</span>
+                        <span class="tool">Pandas</span>
                         <span class="tool">Python</span>
-                        <span class="tool">Pygame</span>
+                        <span class="tool">PipEnv</span>
+                        <span class="tool">XML</span>
                       </span>
                     </p>
                   </div>
@@ -850,45 +1029,21 @@
               </div>
             </a>
 
-            <a href="https://github.com/mfkimbell/bookstore-manager">
+            <a href="https://github.com/mfkimbell/legends-of-pygame/tree/main">
               <div class="container2">
                 <div class="item2 animated fadeInRight7">
-                  <img class="projectIcon" src="./photos/book.png" />
+                  <img class="projectIcon" src="./photos/zelda.png" />
                   <div class="container3 content1">
-                    <b class="content3"> Bookstore Manager</b>
+                    <b> Legends of Pygame</b>
                     <p>
-                      A <b>Java Swing</b> GUI that a bookstore manager could use
-                      to keep track of the inventory of his bookstore, all of
-                      his customers, and which customers were renting which
-                      books.
-                      <span class="iconDivide">
-                        <span class="tool">Java</span>
-                        <span class="tool">Java Swing</span>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="https://github.com/mfkimbell/alter-and-present-csv-in-sql">
-              <div class="container2">
-                <div class="item2 animated fadeInRight7">
-                  <img class="projectIcon" src="./photos/alter.png" />
-                  <div class="container3 content1">
-                    <b class="content3">
-                      Alter CSV in SQL and Present in Python
-                    </b>
-                    <p>
-                      Takes in CSV data in <b>Python</b>, passes that data to
-                      <b>MySQLWorkbench</b> alters the data in <b>MySQL</b>, and
-                      using <b>Pandas</b>, returns a table of the result as well
-                      as updating the CSV data.
+                      A work-in-progress game built from the ground up in
+                      <b>Python</b> using the <b>Pygame</b> library.
+                      Incorporates graphics, collisions, classes for various
+                      entities, world maps, animations, maps that update with
+                      player position, and more.
                       <span class="iconDivide">
                         <span class="tool">Python</span>
-                        <span class="tool">MySQL</span>
-                        <span class="tool"> MySQL Workbench </span>
-                        <span class="tool"> Pandas </span>
+                        <span class="tool">Pygame</span>
                       </span>
                     </p>
                   </div>
@@ -917,6 +1072,33 @@
               </div>
             </a>
 
+            <a href="https://github.com/mfkimbell/google-translate-tool">
+              <div class="container2">
+                <div class="item2 animated fadeInRight7">
+                  <img class="projectIcon" src="./photos/translate.png" />
+                  <div class="container3 content1">
+                    <b class="content3"> Go Translate Tool </b>
+                    <p>
+                      One of three projects created using Go to learn more about
+                      the language more. This project utilizes
+                      <b>Go Routines</b> for <b>concurrency</b>,
+                      <b>Channels</b> to connect them, and <b>Wait Groups</b> to
+                      prevent race condition errors. This application is a CLI
+                      application that takes in flags in order to translage a
+                      phrase from one language to another.
+                      <span class="iconDivide">
+                        <span class="tool">Go</span>
+                        <span class="tool">Concurrency</span>
+                        <span class="tool"> Go Routines</span>
+                        <span class="tool"> Channels </span>
+                        <span class="tool"> Wait Groups </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
             <a href="https://github.com/mfkimbell/react-docker-todo-list">
               <div class="container2">
                 <div class="item2 animated fadeInRight7">
@@ -938,23 +1120,20 @@
               </div>
             </a>
 
-            <a href="https://github.com/mfkimbell/healthcare-form-autocomplete">
+            <a href="https://github.com/mfkimbell/bookstore-manager">
               <div class="container2">
-                <div class="item2 animated fadeInRight7">
-                  <img class="projectIcon" src="./photos/form.png" />
+                <div class="item2 animated fadeInRight8">
+                  <img class="projectIcon" src="./photos/book.png" />
                   <div class="container3 content1">
-                    <b class="content3">Healthcare Form Autocomplete</b>
+                    <b class="content3"> Bookstore Manager</b>
                     <p>
-                      <b>Selenium</b> webscraper in <b>Python</b> that takes
-                      patient case data from appointments from an excel document
-                      with <b>Pandas</b> and automatically inputs and submits
-                      that data in the hospitals record system.
+                      A <b>Java Swing</b> GUI that a bookstore manager could use
+                      to keep track of the inventory of his bookstore, all of
+                      his customers, and which customers were renting which
+                      books.
                       <span class="iconDivide">
-                        <span class="tool">Selenium</span>
-                        <span class="tool">Pandas</span>
-                        <span class="tool">Python</span>
-                        <span class="tool">PipEnv</span>
-                        <span class="tool">XML</span>
+                        <span class="tool">Java</span>
+                        <span class="tool">Java Swing</span>
                       </span>
                     </p>
                   </div>
@@ -962,26 +1141,24 @@
               </div>
             </a>
 
-            <a href="https://github.com/mfkimbell/google-translate-tool">
+            <a href="https://github.com/mfkimbell/alter-and-present-csv-in-sql">
               <div class="container2">
-                <div class="item2 animated fadeInRight7">
-                  <img class="projectIcon" src="./photos/translate.png" />
+                <div class="item2 animated fadeInRight8">
+                  <img class="projectIcon" src="./photos/alter.png" />
                   <div class="container3 content1">
-                    <b class="content3"> Go Translate Tool </b>
+                    <b class="content3">
+                      Alter CSV in SQL and Present in Python
+                    </b>
                     <p>
-                      One of three projects created using Go to learn more about
-                      the language more. This project utilizes
-                      <b>Go Routines</b> for <b>concurrency</b>,
-                      <b>Channels</b> to connect them, and <b>Wait Groups</b> to
-                      prevent race condition errors. This application is a CLI
-                      application that takes in flags in order to translage a
-                      phrase from one language to another.
+                      Takes in CSV data in <b>Python</b>, passes that data to
+                      <b>MySQLWorkbench</b> alters the data in <b>MySQL</b>, and
+                      using <b>Pandas</b>, returns a table of the result as well
+                      as updating the CSV data.
                       <span class="iconDivide">
-                        <span class="tool">Go</span>
-                        <span class="tool">Concurrency</span>
-                        <span class="tool"> Go Routines</span>
-                        <span class="tool"> Channels </span>
-                        <span class="tool"> Wait Groups </span>
+                        <span class="tool">Python</span>
+                        <span class="tool">MySQL</span>
+                        <span class="tool"> MySQL Workbench </span>
+                        <span class="tool"> Pandas </span>
                       </span>
                     </p>
                   </div>

@@ -1,3 +1,92 @@
+.additional-image {
+  display: none;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.additional-image2 {
+  display: none;
+  max-width: 65%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+.additional-image3 {
+  display: none;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.additional-image4 {
+  display: none;
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.additional-image5 {
+  display: none;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+.additional-image6 {
+  display: none;
+  max-width: 65%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.additional-image7 {
+  display: none;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.container2-helper {
+
+  display: flex;
+  align-items: center; /* Center items vertically */
+	min-width: 32em;
+	flex-direction: row;
+}
+
+.image-button {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+}
+
+.image-button {
+  transition: transform 0.7s ease-in-out;
+  max-height: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+}
+
+
 #project222-link {
   position: relative;
   /* Preserve the inline-block display */
@@ -2615,7 +2704,7 @@ th {
     background-color: #fff;
   }
   .nav__list input:checked + label {
-    color: white;
+  
     background-color: #333;
   }
   .nav__list input:checked + label:before,
