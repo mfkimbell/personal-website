@@ -457,12 +457,67 @@
             </p>
 
             <span class="container2-helper">
+              <a href="https://github.com/uabhacks-at-auhacks24/frontend-in-space">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight2">
+                    <img class="projectIcon" src="./photos/spaceify.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> Spaceify</b>
+                      <p>
+                        Built in 24 hours for Auburn Hackathon 2024 Space Theme.
+                        <b>React</b> web app hosted on <b>AWS EC2</b> that
+                        allows users to dynamically populate 3d rendering of
+                        playlists as a solar system. Song metadata determines
+                        factors of the planet like size, speed, and rotation.
+                        Users can click on planets to hear 30 second snippets of
+                        the song that planet represents. Employs computer vision
+                        via <b>SciKitLearn</b> to map album art palette to
+                        planet color gradient. Utilizes <b>Docker</b> to host
+                        the backend, frontend, and <b>NGINX</b>.
+
+                        <span class="iconDivide">
+                          <span class="tool">AWS-EC2</span>
+                          <span class="tool">Docker</span>
+                          <span class="tool">NGINX</span>
+                          <span class="tool">React</span>
+                          <span class="tool">SciKitLearn</span>
+                          <span class="tool">Computer Vision</span>
+                          <span class="tool">MultiThreading</span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight2"
+                onclick="toggleAdditionalImage10()"
+              />
+            </span>
+            <img
+              class="additional-image10"
+              id="additionalImage10"
+              src="./photos/SpaceifyWorkflow.png"
+              alt="Additional Image"
+            />
+            <script>
+              function toggleAdditionalImage10() {
+                var additionalImage =
+                  document.getElementById("additionalImage10");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
               <a href="https://github.com/mfkimbell/terraform-aws-DevOps">
                 <div class="container2">
                   <div class="item2 animated fadeInRight2">
                     <img class="projectIcon" src="./photos/devops2.png" />
                     <div class="container3 content1">
-                      <b class="content3"> Terraform AWS DevOps Pipeline</b>
+                      <b class="content3"> AWS DevOps Pipeline</b>
                       <p>
                         An <b>AWS</b> pipeline created with <b>Terraform</b>.
                         <b>Ansible </b> playbooks build a <b>Jenkins</b> server
@@ -976,7 +1031,7 @@
             </a>
 
             <a
-              href="https://github.com/mfkimbell/agricultural-monitoring-drone"
+              href="https://github.com/mfkimbell/rust-s-notation-parser"
             >
               <div class="container2">
                 <div class="item2 animated fadeInRight6">
