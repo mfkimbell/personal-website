@@ -66,6 +66,15 @@
   margin-top: -20px;
   margin-bottom: 30px; /* Adjust margin as needed */
 }
+.additional-image14 {
+  display: none;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
 
 .container2-helper {
 
