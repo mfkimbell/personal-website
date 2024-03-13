@@ -582,7 +582,14 @@
                         <b>React</b> web app designed to help CGI in their
                         recruiting efforts. The application allows mobile users
                         to easily input information into a
-                        <b>MongoDB</b> database.
+                        <b>MongoDB</b> database. The app implemets a combined
+                        authenticaion portaal for both students and CGI staff.
+                        Endpoints are secure and cannot be accessed manually.
+                        Students can update information whenever they need, and
+                        upload resumes. HR staff can add addiitonal feedback and
+                        update any fields. They can also use
+                        <b>OpenAI API</b> to generate feedback based on parsing
+                        the submitted resume from the student.
 
                         <span class="iconDivide">
                           <span class="tool">Docker</span>
@@ -630,9 +637,12 @@
                         An <b>AWS</b> pipeline created with <b>Terraform</b>.
                         <b>Ansible </b> playbooks build a <b>Jenkins</b> server
                         with a build slave, which analyzes code with
-                        <b>SonarQube</b>, then builds a container with
+                        <b>SonarQube</b>, which analyzes the codes for bugs and
+                        only continues the pipeline if the app does not reach a
+                        threshold. It then builds a container with
                         <b>Docker</b>, publishes on <b>JFrog Artifactory</b>,
-                        and deploys on <b>Kubernetes</b>.
+                        and deploys on <b>Kubernetes</b> for high availability
+                        in case of crashes.
 
                         <span class="iconDivide">
                           <span class="tool">Terraform</span>
@@ -906,9 +916,10 @@
                       <p>
                         An <b>AWS</b> project that uses <b> Lambda </b> and
                         <b> SNS </b> to allow users to access a
-                        <b>Flask</b> webserver to send email links to specific
-                        users to download uploaded files. User information is
-                        stored in a <b>MySQL</b> RDS Database.
+                        <b>Flask</b> webserver to upload files. These files can
+                        then be shared via email with recipients recieving links
+                        to download uploaded files. User information is stored
+                        in a <b>MySQL</b> RDS Database.
                         <span class="iconDivide">
                           <span class="tool">AWS</span>
                           <span class="tool">Lambda</span>
@@ -1010,7 +1021,8 @@
                       <b>Github Actions</b> and <b>CI/CD Pipeline tools</b>.
                       This project auto-generates comments on issues created in
                       this repository, as well as explains in detail how to
-                      develop and setup basic workflows.
+                      develop and setup basic workflows. Feel free to check out
+                      the README to see the presentation in detail.
                       <span class="iconDivide">
                         <span class="tool">Github Actions</span>
                         <span class="tool">Github CI/CD</span>
@@ -1032,9 +1044,12 @@
                   <div class="container3 content1">
                     <b class="content3"> Azure Blob/Container Management App</b>
                     <p>
-                      A <b>.NET8</b> application that allows users to add,
-                      delete, and view the contents of <b>Blobs</b> and
-                      <b>Containers</b>.
+                      This application creates a simple way to interact with
+                      data on the cloud through an abstracted WebApp. A
+                      <b>.NET8</b> application that allows users to add, delete,
+                      and view the contents of <b>Blobs</b> and
+                      <b>Containers</b>. Users can easily create both blobs and
+                      containers and then adjust the content of each.
                       <span class="iconDivide">
                         <span class="tool">Azure</span>
                         <span class="tool">.NET8</span>
@@ -1151,7 +1166,9 @@
                       <b>Selenium</b> webscraper in <b>Python</b> that takes
                       patient case data from appointments from an excel document
                       with <b>Pandas</b> and automatically inputs and submits
-                      that data in the hospitals record system.
+                      that data in the hospitals record system. It interacts
+                      with easy and complicated dropdowns, as well as selecting
+                      health codes based on various matching.
                       <span class="iconDivide">
                         <span class="tool">Selenium</span>
                         <span class="tool">Pandas</span>
@@ -1175,9 +1192,12 @@
                       <b>React</b> webapp that uses a <b>FastAPI</b> to server
                       an API with <b>Uvicorn</b>. It uses the
                       <b>Spotify API</b> to grab album art, stitch them together
-                      with <b>Pillow</b> and then return the image to users.
-                      Album amounts and resolution of image can be customized by
-                      the user.
+                      with <b>Pillow</b> and then return the image to frontend,
+                      where users can download their custom album-stitched
+                      background. Album amounts and resolution of image can be
+                      customized by the user. The application gives demos of
+                      what the image might appear like in their smartphone
+                      screen.
                       <span class="iconDivide">
                         <span class="tool">Python</span>
                         <span class="tool">Pillow</span>
@@ -1277,7 +1297,8 @@
                     <p>
                       <b>Python</b> project that uses the <b>Torch</b> and
                       <b>Lavis</b> Libraries to implement image captioning and
-                      visual question answering.
+                      visual question answering. The user uploads an image
+                      locally and then can prompt questions about the image.
                       <span class="iconDivide">
                         <span class="tool">Python</span>
                         <span class="tool">PyTorch</span>
@@ -1298,7 +1319,13 @@
                     <p>
                       <b>Rust</b> project that places rectanges into a plane and
                       then recursively calculates the area by using a
-                      <b>QuadTree</b> data structure.
+                      <b>QuadTree</b> data structure. The recursion splits each
+                      quadrant into 4 quadrants. It will mark one quadrant as
+                      completely filled when inputting rectangles. If the
+                      rectangles overlaps with multiple quadrants, it will only
+                      insert the intersections. Areas cannot be double counted
+                      because if a quadrant is already filled it does not add
+                      the area.
                       <span class="iconDivide">
                         <span class="tool">Rust</span>
                         <span class="tool">Recursion</span>
@@ -1345,7 +1372,9 @@
                     <p>
                       <b>React</b> to-do list containerized with <b>Docker</b>.
                       Purpose of this project was to learn more about
-                      containerization.
+                      containerization. Users can add new items to the list,
+                      check them as completed, as well as delete them from the
+                      list.
                       <span class="iconDivide">
                         <span class="tool">React</span>
                         <span class="tool">Docker</span>
