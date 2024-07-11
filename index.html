@@ -95,14 +95,152 @@
               Mitchell Kimbell
               <span class="site-subtitle fadeInDown">Software Engineer</span>
             </a> -->
-            <a style="width: 200px">
-              <img
-                class="animated fadeInDown2"
-                src="./photos/logo3.png"
-                style="min-width: 5em"
-                itemprop="image"
-              />
-            </a>
+            <div
+              id="spotify-widget-container"
+              style="
+                display: flex;
+                align-items: center;
+                background: transparent;
+                max-width: 300px;
+                max-height: 50px;
+              "
+            >
+              <div style="position: relative; flex-shrink: 0">
+                <img
+                  id="album-art"
+                  src="photos/spotify.png"
+                  alt="Album Art"
+                  style="
+                    min-width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    margin-right: 0.4em;
+                  "
+                />
+                <div
+                  class=""
+                  style="
+                    position: absolute;
+                    bottom: -6px;
+                    right: -2px;
+                    width: 10px;
+                    height: 10px;
+
+                    border-radius: 50%;
+                    border: 4px solid #181818;
+                  "
+                ></div>
+                <div
+                  class="green-dot"
+                  style="
+                    position: absolute;
+                    bottom: -2px;
+                    right: 2px;
+                    width: 10px;
+                    height: 10px;
+                    background-color: green;
+                    border-radius: 50%;
+                  "
+                ></div>
+              </div>
+              <div
+                style="
+                  margin-left: 5px;
+                  flex-grow: 1;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    color: #fff;
+                    font-size: 0.3em;
+                  "
+                ></div>
+                <div
+                  id="scroll-container"
+                  style="
+                    overflow: hidden;
+                    white-space: nowrap;
+                    max-width: 300px;
+                  "
+                >
+                  <div
+                    id="song-name"
+                    style="
+                      color: #fff;
+                      font-size: 0.8em;
+                      font-weight: bold;
+                      display: inline-block;
+                      animation: scroll 12s linear infinite;
+                    "
+                  >
+                    Season 2, Ep 6 - Momo the Mouse (with Erin Kief)
+                  </div>
+                </div>
+                <div
+                  id="artist-name"
+                  style="color: #b3b3b3; font-size: 0.6em; margin-top: 2px"
+                >
+                  Hello From The Magic Tavern
+                </div>
+              </div>
+            </div>
+
+            <style>
+              @keyframes scroll {
+                0% {
+                  transform: translateX(85%);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+              }
+
+              @keyframes pulse {
+                0%,
+                100% {
+                  transform: scale(1);
+                }
+                50% {
+                  transform: scale(1.1);
+                }
+              }
+
+              #spotify-widget-container {
+                font-family: Arial, sans-serif;
+              }
+
+              #album-art {
+                width: 50px;
+                height: 50px;
+                border-radius: 8px;
+                position: relative;
+              }
+
+              .green-dot {
+                animation: pulse 1s infinite;
+              }
+
+              #scroll-container {
+                overflow: hidden;
+                white-space: nowrap;
+                width: 100%;
+              }
+
+              #song-name {
+                font-size: 0.8em;
+                line-height: 1em;
+              }
+
+              #artist-name {
+                color: #b3b3b3;
+                font-size: 0.6em;
+              }
+            </style>
 
             <ul
               class="visible-links"
@@ -807,7 +945,8 @@
                     <div class="container3 content1">
                       <b class="content3"> RecruitWise</b>
                       <p>
-                        Built over 2 weeks for Google's AI Hackathon 2024. Program that allows recruiters to chat using Gemini to
+                        Built over 2 weeks for Google's AI Hackathon 2024.
+                        Program that allows recruiters to chat using Gemini to
                         jobs and get insights into applicants. It's hosting with
                         a <b>React</b> frontend, a <b>FastAPI</b> backend, and
                         connects with <b> Google Cloud</b> to produce candidate
