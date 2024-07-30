@@ -822,6 +822,64 @@
             </script>
 
             <span class="container2-helper">
+              <a
+                href="https://github.com/mfkimbell/aws-serverless-zoo-management"
+              >
+                <div class="container2">
+                  <div class="item2 animated fadeInRight2">
+                    <img class="projectIcon" src="./photos/zoo.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> AWS SAM Serverless Zoo Manager</b>
+                      <p>
+                        A serverless AWS project that uses a full
+                        <b>AWS SAM</b> template. It builds an animal registry
+                        <b>API Gateway</b> API for new and born animals. It also
+                        uses a <b>Cloudwatch Bus Rule</b> to trigger a
+                        <b>Lambda</b> to automate the feeding for animals.
+                        Animals are stored in a <b>DynamoDB</b> database, and
+                        the animal processing is done through a
+                        <b>Step Function</b> with a <b>Map</b> to process the
+                        <b>Lambda</b> functions simultaneously.
+                        <span class="iconDivide">
+                          <span class="tool"
+                            >SAM (Serverless Application Model)</span
+                          >
+                          <span class="tool">API Gateway</span>
+                          <span class="tool">EventBridge Cron jobs</span>
+                          <span class="tool"> Lambda </span>
+                          <span class="tool"> DynamoDB </span>
+                          <span class="tool"> Step Functions </span>
+                          <span class="tool"> IAM </span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight2"
+                onclick="toggleAdditionalImage45()"
+              />
+            </span>
+            <img
+              class="additional-image45"
+              id="additionalImage45"
+              src="./photos/zoo-workflow.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage45() {
+                var additionalImage =
+                  document.getElementById("additionalImage45");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
               <a href="https://github.com/mfkimbell/django-serverless-webapp">
                 <div class="container2">
                   <div class="item2 animated fadeInRight2">
