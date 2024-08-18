@@ -1269,6 +1269,61 @@
               }
             </script>
 
+            <span class="container2-helper">
+              <a
+                href="https://github.com/mfkimbell/github-actions-custom-actions"
+              >
+                <div class="container2">
+                  <div class="item2 animated fadeInRight5">
+                    <img class="projectIcon" src="./photos/kafka.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> Kafka Stock Market Data Stream </b>
+                      <p>
+                        This project uses <b>Jupyter Notebooks</b> to produce to
+                        a <b>Apache Kafka</b> Stream hosted on <b>AWS MSK</b>.
+                      
+                        The stock market API data is consumed by a Jupyter consumer and stored in
+                        <b>S3</b>. An <b>AWS Glue</b> crawler takes the S3 Json
+                        files, and transforms them into a data catalog for
+                        <b>AWS Athena</b> to query against in real-time.
+                        <span class="iconDivide">
+                          <span class="tool">Kafka</span>
+                          <span class="tool">Jupyter Notebooks</span>
+                          <span class="tool">Pandas</span>
+                          <span class="tool">AWS MSK</span>
+                          <span class="tool">AWS EC2</span>
+                          <span class="tool">AWS Glue</span>
+                          <span class="tool">AWS S3</span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight5"
+                onclick="toggleAdditionalImage7()"
+              />
+            </span>
+            <img
+              class="additional-image7"
+              id="additionalImage7"
+              src="./photos/actions-map.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage7() {
+                var additionalImage =
+                  document.getElementById("additionalImage7");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
             <a
               href="https://github.com/mfkimbell/reviews-nlp-sentiment-analysis"
             >
