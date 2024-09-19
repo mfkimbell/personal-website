@@ -1337,11 +1337,11 @@
                         <b>Langchain</b> to keep track of the conversations
                         memory and give contextually accurate responses.
                         <span class="iconDivide">
-                          <span class="tool">Langchainck</span>
+                          <span class="tool">Langchain</span>
+                          <span class="tool">Bedrock</span>
                           <span class="tool">Claude-3-haiku</span>
                           <span class="tool">Streamlit</span>
                           <span class="tool">Docker</span>
-                          <span class="tool">Langchain</span>
                         </span>
                       </p>
                     </div>
@@ -1368,6 +1368,68 @@
               function toggleAdditionalImage72() {
                 var additionalImage =
                   document.getElementById("additionalImage72");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/ai-chatbot">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight5">
+                    <img class="projectIcon" src="./photos/rag.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> AI RAG Document QA </b>
+                      <p>
+                        <b>Dockerized</b> Python application that runs a
+                        <b>Streamlet</b> UI for a
+                        <b>RAG (Retrieval-Augmented Generation)</b> document
+                        question and answering bot. The pdf is loaded, split
+                        into chunks, and turned into embeddings by
+                        <b>AWS Bedrock's Titan Text</b>. These embeddings are
+                        stored in Meta's
+                        <b>FAISS Facebook AI Similarity Search</b>. The question
+                        that the user gives is embedded, and Langchain performs
+                        a similarity search on the question, grabs data context
+                        from the <b>Vector storage</b>, and passes that context
+                        and question to <b>Claude v-2 LLM</b>, which gives the
+                        user a response.
+
+                        <span class="iconDivide">
+                          <span class="tool">Langchain</span>
+                          <span class="tool">Claude-v2</span>
+                          <span class="tool">Titan-embed-text-v1</span>
+                          <span class="tool">FAISS</span>
+                          <span class="tool">Streamlit</span>
+                          <span class="tool">Docker</span>
+                          <span class="tool">Langchain</span>
+
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight5"
+                onclick="toggleAdditionalImage78()"
+              />
+            </span>
+
+            <img
+              class="additional-image78"
+              id="additionalImage78"
+              src="./photos/rag_arch.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage78() {
+                var additionalImage =
+                  document.getElementById("additionalImage78");
                 additionalImage.style.display =
                   additionalImage.style.display === "block" ? "none" : "block";
               }
