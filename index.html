@@ -1323,6 +1323,66 @@
             </script>
 
             <span class="container2-helper">
+              <a href="https://github.com/mfkimbell/ai-company-agent/tree/main">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight5">
+                    <img class="projectIcon" src="./photos/agent.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> AI Company Agent </b>
+                      <p>
+                        This project demonstrates how to build a company AI
+                        agent using <b>Amazon Bedrock</b> and
+                        <b>Claude 3 Sonnet</b> to interpret user inputs and
+                        execute corresponding API operations via
+                        <b>AWS Lambda</b> functions. The agent leverages
+                        semantic matching to map user prompts to API
+                        descriptions defined in an <b>OpenAPI schema</b>.
+                        Banking records are stored in <b>DyamoDB</b>, returned
+                        to the <b>Bedrock Agent</b>, which uses
+                        <b>RAG Retrieval-Augmented Generation</b> similarty
+                        search in an <b>Bedrock Knowledge Base</b> from an
+                        <b>OpenSearch</b> vector database, with vector
+                        embeddings generated from company pdf stored in
+                        <b>S3</b>
+                        <span class="iconDivide">
+                          <span class="tool">RAG</span>
+                          <span class="tool">Bedrock Agent</span>
+                          <span class="tool">Bedrock Knowledge Base</span>
+                          <span class="tool">Claude 3 Sonnet</span>
+                          <span class="tool">Lambda</span>
+                          <span class="tool">OpenAPI Schema</span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight5"
+                onclick="toggleAdditionalImage62()"
+              />
+            </span>
+
+            <img
+              class="additional-image62"
+              id="additionalImage62"
+              src="./photos/agent_arch.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage62() {
+                var additionalImage =
+                  document.getElementById("additionalImage62");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
               <a href="https://github.com/mfkimbell/ai-chatbot">
                 <div class="container2">
                   <div class="item2 animated fadeInRight5">
@@ -1339,7 +1399,7 @@
                         <span class="iconDivide">
                           <span class="tool">Langchain</span>
                           <span class="tool">Bedrock</span>
-                          <span class="tool">Claude-3-haiku</span>
+                          <span class="tool">Claude 3 Haiku</span>
                           <span class="tool">Streamlit</span>
                           <span class="tool">Docker</span>
                         </span>
@@ -1374,7 +1434,7 @@
             </script>
 
             <span class="container2-helper">
-              <a href="https://github.com/mfkimbell/ai-chatbot">
+              <a href="https://github.com/mfkimbell/ai-rag-pdf">
                 <div class="container2">
                   <div class="item2 animated fadeInRight5">
                     <img class="projectIcon" src="./photos/rag.png" />
@@ -1403,7 +1463,6 @@
                           <span class="tool">Streamlit</span>
                           <span class="tool">Docker</span>
                           <span class="tool">Langchain</span>
-
                         </span>
                       </p>
                     </div>
@@ -1627,8 +1686,6 @@
                 </div>
               </div>
             </a>
-
-            
 
             <a href="https://github.com/mfkimbell/healthcare-form-autocomplete">
               <div class="container2">
