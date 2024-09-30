@@ -1266,6 +1266,71 @@
             </script>
 
             <span class="container2-helper">
+              <a href="https://github.com/jaypyles/marketingviaai">
+                <div class="container2">
+                  <div class="item2 animated fadeInRight5">
+                    <img class="projectIcon" src="./photos/marketing.png" />
+                    <div class="container3 content1">
+                      <b class="content3"> AI Marketing Agent </b>
+                      <p>
+                        This was a commisioned project, so the source code is
+                        private. Users access the application on any webpage via
+                        an
+                        <b>embeddedable iframe</b>. The appliction's
+                        <b>React</b> frontend is hosted on <b>Firebase</b> and
+                        the backend is hosted on
+                        <b>Google Cloud's Cloud Run</b>. The <b>FastAPI</b> API
+                        communicates with <b>OpenAI's API</b> to generate AI
+                        responses. When code chnages are pushed,
+                        <b>Github Actions</b> deploys the frontend and backend.
+                        It builds a <b>Docker</b> container, which is stored in
+                        <b>Google Artifact Registry</b>, which is pulled by
+                        Cloud Run. Secrets are stored on
+                        <b>Github Secrets</b> and <b>Google Secrets Manager.</b>
+                        <span class="iconDivide">
+                          <span class="tool">Github Actions</span>
+                          <span class="tool">React</span>
+                          <span class="tool">Firebase</span>
+                          <span class="tool">Google Cloud</span>
+                          <span class="tool">Google Cloud Run</span>
+                          <span class="tool">Google Secrets Manager</span>
+                          <span class="tool">Google Artifacts Registry</span>
+                          <span class="tool">Google Secret Manager</span>
+                          <span class="tool">OpenAI API</span>
+                          <span class="tool">Docker</span>
+                          <span class="tool">FastAPI</span>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <img
+                src="./photos/more.png"
+                type="button"
+                class="btn btn-secondary image-button animated fadeInRight5"
+                onclick="toggleAdditionalImage42()"
+              />
+            </span>
+
+            <img
+              class="additional-image42"
+              id="additionalImage42"
+              src="./photos/marketing_arch.png"
+              alt="Additional Image"
+            />
+
+            <script>
+              function toggleAdditionalImage42() {
+                var additionalImage =
+                  document.getElementById("additionalImage42");
+                additionalImage.style.display =
+                  additionalImage.style.display === "block" ? "none" : "block";
+              }
+            </script>
+
+            <span class="container2-helper">
               <a href="https://github.com/mfkimbell/ai-company-agent/tree/main">
                 <div class="container2">
                   <div class="item2 animated fadeInRight5">
