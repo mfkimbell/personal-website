@@ -281,18 +281,7 @@
                           margin-bottom: -0.3em;
                         "
                       />
-                      <img
-                        id="project222-spin-image"
-                        src="./photos/spin.gif"
-                        style="
-                          min-width: 1.6em;
-                          min-height: 1.6em;
-                          margin-bottom: -0.5em;
-                          display: none;
-                          padding-left: -7em;
-                          margin-left: -0.3em;
-                        "
-                      />
+                    
                     </div>
                     <span style="margin-left: -0.8em">Projects</span>
                   </div>
@@ -328,7 +317,7 @@
                         "
                       />
                     </div>
-                    <span style="margin-left: -0.8em">Resume</span>
+                    <span style="margin-left: -0.6em">Resume</span>
                   </div>
                 </a>
               </li>
@@ -503,60 +492,9 @@
 
             
 
-            <script>
-              // Wait for the DOM to be ready
-              document.addEventListener("DOMContentLoaded", function () {
-                var hobbies2Link = document.getElementById("hobbies2-link");
-                var hobbies2Image = document.getElementById("hobbies2-image");
-                var hobbies2SpinImage =
-                  document.getElementById("hobbies2-spin-image");
+        
 
-                // Add a mouseover event listener
-                hobbies2Link.addEventListener("mouseover", function () {
-                  // Hide the original image when the spin.gif is visible
-                  hobbies2Image.style.display = "none";
-                  hobbies2SpinImage.style.display = "inline-block";
-
-                  // Restart the animation by changing the src attribute
-                  hobbies2SpinImage.src =
-                    "./photos/spin.gif?" + new Date().getTime();
-                });
-
-                // Add a mouseout event listener
-                hobbies2Link.addEventListener("mouseout", function () {
-                  // Show the original image when not hovering
-                  hobbies2Image.style.display = "inline-block";
-                  hobbies2SpinImage.style.display = "none";
-                });
-              });
-            </script>
-
-            <script>
-              // Wait for the DOM to be ready
-              document.addEventListener("DOMContentLoaded", function () {
-                var contactLink = document.getElementById("contact-link");
-                var contactImage = document.getElementById("contact-image");
-                var contactSpinImage =
-                  document.getElementById("contact-spin-image");
-
-                // Add a mouseover event listener
-                contactLink.addEventListener("mouseover", function () {
-                  // Hide the original image when the spin.gif is visible
-                  contactImage.style.display = "none";
-                  contactSpinImage.style.display = "inline-block";
-
-                  // Restart the animation by changing the src attribute
-                  contactSpinImage.src =
-                    "./photos/spin.gif?" + new Date().getTime();
-                });
-
-                // Add a mouseout event listener
-                contactLink.addEventListener("mouseout", function () {
-                  // Show the original image when not hovering
-                  contactImage.style.display = "inline-block";
-                  contactSpinImage.style.display = "none";
-                });
-              });
+           
             </script>
 
             <button class="greedy-nav__toggle hidden" type="button" count="0">
