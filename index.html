@@ -548,10 +548,10 @@
                       <b class="content3"> AWS SaaS DevOps Webapp Template</b>
                       <p>
                         Fully automated DevOps template for deploying a 
-                        SaaS web application on AWS using Terraform, GitHub Actions, 
-                        and ECS. It includes a Next.js frontend and a FastAPI backend 
-                        with PostgreSQL (RDS), featuring a JWT-based authentication 
-                        system and a credit-based usage model. It uses SQLAlchemy as an ORM 
+                        SaaS web application on <b>AWS</b> using <b>Terraform</b>, <b>GitHub Actions</b>, 
+                        and <b>ECS</b>. It includes a <b>Next.js</b> frontend and a <b>FastAPI</b> backend 
+                        with <b>PostgreSQL</b> (RDS), featuring a <b>JWT</b>-based authentication 
+                        system and a credit-based usage model. It uses <b>SQLAlchemy</b> as an ORM 
                         to manipulate database data.
                         <span class="iconDivide">
                           
@@ -1519,6 +1519,58 @@
   function toggleAdditionalImage7() {
     var additionalImage =
       document.getElementById("additionalImage7");
+    additionalImage.style.display =
+      additionalImage.style.display === "block" ? "none" : "block";
+  }
+</script>
+
+<span class="container2-helper">
+  <a
+    href="https://github.com/mfkimbell/go-grpc-microservice"
+  >
+    <div class="container2">
+      <div class="item2 animated fadeInRight5">
+        <img class="projectIcon" src="./photos/grpc.png" />
+        <div class="container3 content1">
+          <b class="content3"> Golang gRPC Microservice </b>
+          <p>
+            A <b>Go</b> <b>gRPC</b> service that accepts both gRPC and http requests
+            for "orders" that get logged in a <b>postgreSQL </b> database. 
+            The service can be accessed 
+            by Python, Java, or JavaScript clients – each using 
+            code generated from a single .proto definition. 
+            This ensures language-agnostic communication while 
+            maintaining high performance over HTTP/2. The 
+            <span class="iconDivide">
+              <span class="tool">gRPC</span>
+              <span class="tool">Go</span>
+              <span class="tool">http</span>
+              <span class="tool">postgresql</span>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <img
+    src="./photos/more.png"
+    type="button"
+    class="btn btn-secondary image-button animated fadeInRight5"
+    onclick="toggleAdditionalImage1111()"
+  />
+</span>
+<img
+  class="additional-image1111"
+  id="additionalImage1111"
+  src="./photos/grpc_arch.png"
+  alt="Additional Image"
+/>
+
+<script>
+  function toggleAdditionalImage1111() {
+    var additionalImage =
+      document.getElementById("additionalImage1111");
     additionalImage.style.display =
       additionalImage.style.display === "block" ? "none" : "block";
   }
