@@ -84,6 +84,15 @@
   margin-bottom: 30px; /* Adjust margin as needed */
 }
 
+.additional-image449 {
+  display: none;
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-top: -20px;
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
 .additional-image {
   display: none;
   max-width: 70%;
